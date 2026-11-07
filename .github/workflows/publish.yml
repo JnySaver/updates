@@ -1,0 +1,43 @@
+# Turns a push of the `incoming` branch into GitHub releases + an updated latest.json on main.
+name: Publish
+
+on:
+  push:
+    branches: [incoming]
+
+permissions:
+  contents: write
+
+concurrency: publish
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    env:
+      GH_TOKEN: ${{ github.token }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: incoming
+          path: incoming-tree
+
+      - name: Releases (installers checked against the signed latest.json first)
+        working-directory: incoming-tree
+        run: python3 .github/publish.py
+
+      - name: latest.json, signature and Instagram reader onto main
+        run: |
+          git clone --depth 1 --branch main "https://x-access-token:${GH_TOKEN}@github.com/${GITHUB_REPOSITORY}.git" main-tree
+          cp incoming-tree/latest.json incoming-tree/latest.json.sig main-tree/
+          mkdir -p main-tree/instagram
+          if ls incoming-tree/instagram/*.js > /dev/null 2>&1; then cp incoming-tree/instagram/*.js main-tree/instagram/; fi
+          cd main-tree
+          git config user.name "JnySaver publisher"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A
+          git diff --cached --quiet || git commit -m "Publish: $(python3 -c "import json;m=json.load(open('latest.json'));print(', '.join(k+' '+str(m[k]['version']) for k in ('windows','android','instagram') if k in m))")"
+          git push origin main
+
+      - name: Remove the incoming branch
+        run: git -C incoming-tree push origin --delete incoming
