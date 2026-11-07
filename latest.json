@@ -1,0 +1,25 @@
+{
+  "schema": 1,
+  "windows": {
+    "version": "1.5.0",
+    "url": "https://github.com/JnySaver/updates/releases/download/windows-1.5.0/JnySaver-Setup-1.5.0.exe",
+    "sha256": "e900e0fcc0530bc1c0d50cfb5658a25de60ef0fa7dfcbc4e401c77f2ffcbbebd",
+    "size": 392152,
+    "notes": "Updates itself from now on. Instagram fixes arrive without reinstalling. New: Problem report in settings."
+  },
+  "android": {
+    "version": "2.3",
+    "versionCode": 6,
+    "url": "https://github.com/JnySaver/updates/releases/download/android-2.3/JnySaver-2.3.apk",
+    "sha256": "20f4e973748efd8467e55cf7004543db74ee218420f93ac7ef6b2cbf0b8ca916",
+    "size": 60299026,
+    "notes": "Updates itself from now on. Instagram fixes arrive without reinstalling. New: Send problem report."
+  },
+  "instagram": {
+    "version": 1,
+    "url": "https://raw.githubusercontent.com/JnySaver/updates/main/instagram/extract-v1.js",
+    "sha256": "55a7650c1d5bac0768060854deb32f253d647d636cce75fdf25617a85bdc64b2",
+    "minWindows": "1.5",
+    "minAndroid": 6
+  }
+}
