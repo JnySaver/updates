@@ -1,12 +1,12 @@
 {
   "schema": 1,
   "jnycam": {
-    "version": "0.2.0",
-    "versionCode": 2,
-    "url": "https://github.com/JnySaver/updates/releases/download/jnycam-0.2.0/JnyCam-0.2.0.apk",
-    "sha256": "8a833a9823ac926df2db6e664ddef6cdbd89b450dd51a3c956fd11503168a7df",
-    "size": 4155328,
-    "notes": "Updates itself from now on: it checks on its own, or tap ⓘ → Check for updates.",
+    "version": "0.3.0",
+    "versionCode": 3,
+    "url": "https://github.com/JnySaver/updates/releases/download/jnycam-0.3.0/JnyCam-0.3.0.apk",
+    "sha256": "4a0bfeb98353182eac2abd3ea0b8d18d191a6027fbb8bbd37d47a991b1028629",
+    "size": 3722576,
+    "notes": "New document scanner: finds page edges itself (even white paper on a light table), drag corners with a magnifier, straightens pages shot at an angle, removes shadows, rotate, Auto/Original/Grey/B&W, import from gallery, multi-page PDF.",
     "minSdk": 29
   }
 }
