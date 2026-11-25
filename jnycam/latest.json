@@ -1,12 +1,12 @@
 {
   "schema": 1,
   "jnycam": {
-    "version": "0.5.0",
-    "versionCode": 5,
-    "url": "https://github.com/JnySaver/updates/releases/download/jnycam-0.5.0/JnyCam-0.5.0.apk",
-    "sha256": "13c8bfe2bdafbe4f5ec110f37258c397d643a3af2694f2fa5454f74fb04a4a3a",
-    "size": 3738960,
-    "notes": "Photo: crisper detail (two-level sharpening; the phone's own sharpening is back on for Smart shots), richer colour, slightly deeper mid-tones and a mild warm-cast correction. New Sharpness setting in Smart: Natural / Crisp / Extra.",
+    "version": "0.6.0",
+    "versionCode": 6,
+    "url": "https://github.com/JnySaver/updates/releases/download/jnycam-0.6.0/JnyCam-0.6.0.apk",
+    "sha256": "96423b1700b8a0040785a264b72d2e864497beb18c08f3aa14e8f46264c39a27",
+    "size": 3771728,
+    "notes": "Night → Stars (tripod): long exposures stacked for 30 s–4 min, sky drift tracked, focus at infinity, hot pixels removed. Zoom is kept when you switch modes. Tap the preview for a brightness slider; long-press for AE/AF lock. Shutter is free while the last photo is still processing. Level line with the grid. Scan takes the page by itself when the outline holds still. Camera report now lists phone-specific camera controls and tests the hidden lenses.",
     "minSdk": 29
   }
 }
