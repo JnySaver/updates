@@ -21,3 +21,13 @@ After that, both apps update themselves.
 The private project pushes a branch called `incoming` with the files and a signed `latest.json`.
 `.github/workflows/publish.yml` turns it into GitHub releases, moves `latest.json`, its signature and the reader onto
 `main`, and deletes `incoming`.
+
+## JnyCam (camera app for Moto phones)
+
+- **Install or reinstall (for example after a phone reset):** on the phone, open
+  https://github.com/JnySaver/updates/releases/download/jnycam/JnyCam.apk and install it.
+  That link always gives the newest version.
+- After that, JnyCam updates itself (it checks on its own, or tap ⓘ → *Check for updates*).
+- `jnycam/latest.json` and `jnycam/latest.json.sig` work like JnySaver's: the app only accepts a `latest.json` signed
+  with JnyCam's own update key, and only installs an APK whose SHA-256 matches it.
+- Releases: `jnycam` (always the newest, as `JnyCam.apk`) and `jnycam-<version>` (one per version).

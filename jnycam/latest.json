@@ -1,0 +1,12 @@
+{
+  "schema": 1,
+  "jnycam": {
+    "version": "0.2.0",
+    "versionCode": 2,
+    "url": "https://github.com/JnySaver/updates/releases/download/jnycam-0.2.0/JnyCam-0.2.0.apk",
+    "sha256": "8a833a9823ac926df2db6e664ddef6cdbd89b450dd51a3c956fd11503168a7df",
+    "size": 4155328,
+    "notes": "Updates itself from now on: it checks on its own, or tap ⓘ → Check for updates.",
+    "minSdk": 29
+  }
+}
