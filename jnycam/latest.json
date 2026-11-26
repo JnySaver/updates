@@ -1,12 +1,12 @@
 {
   "schema": 1,
   "jnycam": {
-    "version": "0.6.0",
-    "versionCode": 6,
-    "url": "https://github.com/JnySaver/updates/releases/download/jnycam-0.6.0/JnyCam-0.6.0.apk",
-    "sha256": "96423b1700b8a0040785a264b72d2e864497beb18c08f3aa14e8f46264c39a27",
-    "size": 3771728,
-    "notes": "Night → Stars (tripod): long exposures stacked for 30 s–4 min, sky drift tracked, focus at infinity, hot pixels removed. Zoom is kept when you switch modes. Tap the preview for a brightness slider; long-press for AE/AF lock. Shutter is free while the last photo is still processing. Level line with the grid. Scan takes the page by itself when the outline holds still. Camera report now lists phone-specific camera controls and tests the hidden lenses.",
+    "version": "0.7.0",
+    "versionCode": 7,
+    "url": "https://github.com/JnySaver/updates/releases/download/jnycam-0.7.0/JnyCam-0.7.0.apk",
+    "sha256": "814d1c69c6a3c86d08650b6551fb48fb0fe9391113921a32e16c61684250a656",
+    "size": 3820880,
+    "notes": "Ultra-wide: the Edge 60 Fusion's hidden 0.7x lens now works in Photo and Night (tap 0.7x, or pinch out from 1x). Crisper Smart photos at screen size: more mid-detail and local contrast, smoother walls and skies. Lab test (in the ⓘ report): tries the phone's own MediaTek switches — multi-frame noise reduction, HDR, remosaic 2x — and measures each.",
     "minSdk": 29
   }
 }
